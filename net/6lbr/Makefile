@@ -1,7 +1,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=6lbr
-PKG_VERSION:=1.4
+PKG_VERSION:=1.5
 PKG_RELEASE:=0
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_URL:=https://github.com/cetic/6lbr.git
@@ -20,7 +20,7 @@ define Package/6lbr
   CATEGORY:=Network
   TITLE:=CETIC 6LBR
   MAINTAINER:=Laurent <laurent.deru@cetic.be>
-  DEPENDS:=+libncurses +kmod-tun +kmod-usb-serial-ftdi kmod-usb-acm +logrotate
+  DEPENDS:=+libncurses +kmod-tun +kmod-usb-serial-ftdi kmod-usb-acm +logrotate +librt
 endef
 
 define Package/6lbr/description
